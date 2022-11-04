@@ -11,7 +11,12 @@ public class ApplianceCreatorFactory {
     private final Map<String, ApplianceCreator> creators = new HashMap<>();
 
     private ApplianceCreatorFactory() {
-
+        creators.put("oven", new OvenCreator());
+        creators.put("laptop", new LaptopCreator());
+        creators.put("refrigerator", new RefrigeratorCreator());
+        creators.put("vacuumCleaner", new VacuumCleanerCreator());
+        creators.put("tabletPC", new TabletPCCreator());
+        creators.put("speakers", new SpeakersCreator() );
     }
 
     public static ApplianceCreatorFactory getInstance() {
