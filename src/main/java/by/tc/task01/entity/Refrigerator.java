@@ -22,4 +22,16 @@ public class Refrigerator extends Appliance{
             case WIDTH -> width == Double.parseDouble(String.valueOf(value));
         };
     }
+
+    @Override
+    public String toString() {
+        return "Refrigerator{" +
+                "power consumption=" + powerConsumption +
+                ", weight=" + weight +
+                ", freezer capacity=" + freezerCapacity +
+                ", overall capacity=" + overallCapacity +
+                ", height=" + height +
+                ", width=" + width +
+                '}';
+    }
 }

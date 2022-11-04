@@ -22,4 +22,16 @@ public class Oven extends Appliance{
             case WIDTH -> width == Double.parseDouble(String.valueOf(value));
         };
     }
+
+    @Override
+    public String toString() {
+        return "Oven{" +
+                "power consumption=" + powerConsumption +
+                ", weight=" + weight +
+                ", capacity=" + capacity +
+                ", depth=" + depth +
+                ", height=" + height +
+                ", width=" + width +
+                '}';
+    }
 }

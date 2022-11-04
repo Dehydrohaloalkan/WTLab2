@@ -22,4 +22,16 @@ public class Laptop extends Appliance{
             case DISPLAY_INCHS -> displayInchs == (Integer) value;
         };
     }
+
+    @Override
+    public String toString() {
+        return "Laptop{" +
+                "battery capacity=" + batteryCapacity +
+                ", os='" + os + '\'' +
+                ", memory ROM=" + memoryRom +
+                ", system memory=" + systemMemory +
+                ", cpu=" + cpu +
+                ", display Inchs=" + displayInchs +
+                '}';
+    }
 }

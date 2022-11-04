@@ -23,4 +23,15 @@ public class TabletPC extends Appliance{
             case COLOR -> color == PCColor.valueOf((String) value);
         };
     }
+
+    @Override
+    public String toString() {
+        return "Tablet PC{" +
+                "battery capacity=" + batteryCapacity +
+                ", display Inches=" + displayInches +
+                ", memory ROM=" + memoryRom +
+                ", flash memory capacity=" + flashMemoryCapacity +
+                ", color=" + color +
+                '}';
+    }
 }

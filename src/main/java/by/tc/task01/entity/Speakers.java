@@ -18,4 +18,14 @@ public class Speakers extends Appliance{
             case CORD_LENGTH -> cordLength == (Integer) value;
         };
     }
+
+    @Override
+    public String toString() {
+        return "Speakers{" +
+                "power consumption=" + powerConsumption +
+                ", number of speakers=" + numberOfSpeakers +
+                ", frequency range='" + frequencyRange + '\'' +
+                ", cord length=" + cordLength +
+                '}';
+    }
 }

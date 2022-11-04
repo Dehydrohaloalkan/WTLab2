@@ -23,4 +23,16 @@ public class VacuumCleaner extends Appliance{
             case CLEANING_WIDTH -> cleaningWidth == (Integer) value;
         };
     }
+
+    @Override
+    public String toString() {
+        return "Vacuum Cleaner{" +
+                "power consumption=" + powerConsumption +
+                ", cleaner type=" + cleanerType +
+                ", bag type='" + bagType + '\'' +
+                ", wand type='" + wandType + '\'' +
+                ", motor speed regulation=" + motorSpeedRegulation +
+                ", cleaning width=" + cleaningWidth +
+                '}';
+    }
 }
