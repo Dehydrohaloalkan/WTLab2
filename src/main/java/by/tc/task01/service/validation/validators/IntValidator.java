@@ -5,6 +5,10 @@ import by.tc.task01.service.validation.ValueValidator;
 public class IntValidator implements ValueValidator {
     @Override
     public boolean validate(Object obj) {
-        return false;
+        try {
+            return (Integer) obj > 0;
+        } catch (Exception e) {
+            return false;
+        }
     }
 }
