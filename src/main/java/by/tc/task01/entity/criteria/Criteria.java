@@ -8,6 +8,10 @@ public class Criteria {
 	private String groupSearchName;
 	private Map<String, Object> criteria = new HashMap<String, Object>();
 
+	public Map<String, Object> getCriteria() {
+		return criteria;
+	}
+
 	public Criteria(String groupSearchName) {
 		this.groupSearchName = groupSearchName;
 	}
@@ -19,7 +23,4 @@ public class Criteria {
 	public void add(String searchCriteria, Object value) {
 		criteria.put(searchCriteria, value);
 	}
-	
-	// TODO you may add your own code here
-
 }
