@@ -20,11 +20,7 @@ public class ApplianceServiceImpl implements ApplianceService{
 		
 		Appliance appliance = applianceDAO.find(criteria);
 		
-		// TODO you may add your own code here
-		
 		return appliance;
 	}
 
 }
-
-// TODO you may add your own new classes
