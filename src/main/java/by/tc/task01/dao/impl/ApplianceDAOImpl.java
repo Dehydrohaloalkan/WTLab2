@@ -18,7 +18,7 @@ import java.util.Map;
 
 public class ApplianceDAOImpl implements ApplianceDAO{
 
-	private static final String DB_XML = "./src/main/resources/appliances_db.xml";
+	private static final String DB_XML = "src/main/resources/appliances_db.xml";
 
 	@Override
 	public Appliance find(Criteria criteria) {
