@@ -8,6 +8,9 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class TabletPCCreator implements ApplianceCreator {
+    /**
+     * Represent creator of a tabletPC appliance
+     */
     @Override
     public Appliance create(NodeList nodes) {
         TabletPC tabletPC = new TabletPC();

@@ -11,7 +11,9 @@ public class VacuumCleaner extends Appliance{
     public String wandType;
     public int motorSpeedRegulation;
     public int cleaningWidth;
-
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean matches(String key, Object value) {
         return switch (SearchCriteria.VacuumCleaner.valueOf(key)){

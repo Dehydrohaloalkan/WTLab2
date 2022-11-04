@@ -18,11 +18,15 @@ public class ApplianceCreatorFactory {
         creators.put("tabletPC", new TabletPCCreator());
         creators.put("speakers", new SpeakersCreator() );
     }
-
+    /**
+     * Gets the instance of a factory
+     */
     public static ApplianceCreatorFactory getInstance() {
         return instance;
     }
-
+    /**
+     * Gets the creator of a correct type appliance from its name
+     */
     public ApplianceCreator getCreator(String applianceName) {
         return creators.get(applianceName);
     }

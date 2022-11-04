@@ -20,6 +20,9 @@ public class ApplianceDAOImpl implements ApplianceDAO{
 
 	private static final String DB_XML = "src/main/resources/appliances_db.xml";
 
+	/**
+	 * Find Appliance in XML file by criteria
+	 */
 	@Override
 	public Appliance find(Criteria criteria) {
 		List<Appliance> matches = new ArrayList<>();

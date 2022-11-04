@@ -10,7 +10,9 @@ public class Oven extends Appliance{
     public int depth;
     public double height;
     public double width;
-
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean matches(String key, Object value) {
         return switch (SearchCriteria.Oven.valueOf(key)){

@@ -4,6 +4,9 @@ import by.tc.task01.entity.enums.PCColor;
 import by.tc.task01.service.validation.ValueValidator;
 
 public class ColorValidator implements ValueValidator {
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean validate(Object obj) {
         try{

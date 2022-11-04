@@ -10,7 +10,9 @@ public class Refrigerator extends Appliance{
     public double overallCapacity;
     public double height;
     public double width;
-
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean matches(String key, Object value) {
         return switch (SearchCriteria.Refrigerator.valueOf(key)){

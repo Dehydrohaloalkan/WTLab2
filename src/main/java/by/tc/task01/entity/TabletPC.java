@@ -12,7 +12,9 @@ public class TabletPC extends Appliance{
     public int memoryRom;
     public int flashMemoryCapacity;
     public PCColor color;
-
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean matches(String key, Object value) {
         return switch (SearchCriteria.TabletPC.valueOf(key)){

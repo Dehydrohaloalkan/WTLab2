@@ -10,7 +10,9 @@ public class Laptop extends Appliance{
     public int systemMemory;
     public double cpu;
     public int displayInchs;
-
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean matches(String key, Object value) {
         return switch (SearchCriteria.Laptop.valueOf(key)){

@@ -8,7 +8,9 @@ public class Speakers extends Appliance{
     public int numberOfSpeakers;
     public String frequencyRange;
     public int cordLength;
-
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean matches(String key, Object value) {
         return switch (SearchCriteria.Speakers.valueOf(key)){

@@ -7,6 +7,9 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class LaptopCreator implements ApplianceCreator {
+    /**
+     * Represent creator of a laptop appliance
+     */
     @Override
     public Appliance create(NodeList nodes) {
         Laptop laptop = new Laptop();

@@ -7,6 +7,9 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class OvenCreator implements ApplianceCreator {
+    /**
+     * Represent creator of a oven appliance
+     */
     @Override
     public Appliance create(NodeList nodes) {
         Oven oven = new Oven();

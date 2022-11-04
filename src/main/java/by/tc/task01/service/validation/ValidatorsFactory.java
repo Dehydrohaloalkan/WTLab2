@@ -32,8 +32,13 @@ public class ValidatorsFactory {
         map.put(List.of(SearchCriteria.Laptop.OS.name(), SearchCriteria.VacuumCleaner.BAG_TYPE.name(),
                 SearchCriteria.VacuumCleaner.WAND_TYPE.name()), new StringValidator());
     };
-
+    /**
+     * Gets the instance of a factory
+     */
     public static ValidatorsFactory getInstance(){ return instance; }
+    /**
+     * Gets the correct validator for a specific search criteria
+     */
     public ValueValidator getValidator(String searchCriteria) {
         for (Map.Entry<List<String>, ValueValidator> entry : map.entrySet()) {
             List<String> key = entry.getKey();

@@ -7,6 +7,9 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class SpeakersCreator implements ApplianceCreator {
+    /**
+     * Represent creator of a speaker appliance
+     */
     @Override
     public Appliance create(NodeList nodes) {
         Speakers speakers = new Speakers();

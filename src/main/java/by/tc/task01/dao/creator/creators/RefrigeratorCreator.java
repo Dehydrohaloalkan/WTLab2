@@ -7,6 +7,9 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class RefrigeratorCreator implements ApplianceCreator {
+    /**
+     * Represent creator of a refrigerator appliance
+     */
     @Override
     public Appliance create(NodeList nodes) {
         Refrigerator refrigerator = new Refrigerator();

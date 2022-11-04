@@ -8,6 +8,9 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class VacuumCleanerCreator implements ApplianceCreator {
+    /**
+     * Represent creator of a vacuumCleaner appliance
+     */
     @Override
     public Appliance create(NodeList nodes) {
         VacuumCleaner vacuumCleaner = new VacuumCleaner();
